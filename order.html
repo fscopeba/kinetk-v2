@@ -38,7 +38,7 @@
         <a href="blog/index.html" class="text-gray-300 hover:text-[#00D4FF] transition">Blog</a>
       </div>
       <div class="hidden md:block">
-        <a href="ats-checker.html" class="bg-[#00D4FF] text-[#0A1428] px-6 py-2.5 rounded-xl font-semibold text-sm hover:bg-[#00BFFF] transition">Get Free Score</a>
+        <a href="ats-checker.html" class="cta-primary bg-[#00D4FF] text-[#0A1428] px-6 py-2.5 rounded-xl font-semibold text-sm hover:bg-[#00BFFF] transition">Get Free Score</a>
       </div>
       <button id="hamburger" class="md:hidden flex flex-col gap-1.5 p-2" aria-label="Menu">
         <span class="block w-6 h-0.5 bg-white transition-all"></span>
@@ -72,27 +72,27 @@
       <!-- Package selector -->
       <div class="mb-8">
         <p class="text-sm font-semibold text-gray-300 mb-3">Select Your Package</p>
-        <div class="grid grid-cols-3 gap-3" id="package-selector">
-          <label class="package-option cursor-pointer">
+        <div class="grid grid-cols-3 gap-3" id="package-selector" style="overflow:visible; padding:8px 4px;">
+          <label class="package-option cursor-pointer" onclick="selectPackage('basic')">
             <input type="radio" name="package" value="basic" class="hidden">
-            <div class="p-4 rounded-2xl border border-[#00D4FF20] hover:border-[#00D4FF] transition text-center package-btn">
+            <div id="pkg-btn-basic" class="p-4 rounded-2xl text-center transition-all" style="border:1.5px solid rgba(0,212,255,0.15); background:transparent;">
               <div class="font-bold text-sm">Basic</div>
-              <div class="text-[#00D4FF] font-bold text-lg">$99</div>
+              <div style="color:#00D4FF;" class="font-bold text-lg">$99</div>
             </div>
           </label>
-          <label class="package-option cursor-pointer">
-            <input type="radio" name="package" value="standard" class="hidden" checked>
-            <div class="p-4 rounded-2xl border border-[#00D4FF] transition text-center package-btn ring-2 ring-[#00D4FF40]">
+          <label class="package-option cursor-pointer" onclick="selectPackage('standard')">
+            <input type="radio" name="package" value="standard" class="hidden">
+            <div id="pkg-btn-standard" class="p-4 rounded-2xl text-center transition-all" style="border:1.5px solid rgba(0,212,255,0.15); background:transparent;">
               <div class="font-bold text-sm">Standard</div>
-              <div class="text-[#00D4FF] font-bold text-lg">$199</div>
-              <div class="text-xs text-[#00D4FF] mt-1">Popular</div>
+              <div style="color:#00D4FF;" class="font-bold text-lg">$199</div>
+              <div class="text-xs mt-1" style="color:#00D4FF;">Popular</div>
             </div>
           </label>
-          <label class="package-option cursor-pointer">
+          <label class="package-option cursor-pointer" onclick="selectPackage('premium')">
             <input type="radio" name="package" value="premium" class="hidden">
-            <div class="p-4 rounded-2xl border border-[#00D4FF20] hover:border-[#00D4FF] transition text-center package-btn">
+            <div id="pkg-btn-premium" class="p-4 rounded-2xl text-center transition-all" style="border:1.5px solid rgba(0,212,255,0.15); background:transparent;">
               <div class="font-bold text-sm">Premium</div>
-              <div class="text-[#00D4FF] font-bold text-lg">$299</div>
+              <div style="color:#00D4FF;" class="font-bold text-lg">$299</div>
             </div>
           </label>
         </div>
@@ -143,7 +143,7 @@
 
         <button type="submit"
                 class="w-full bg-[#00D4FF] text-[#0A1428] py-4 rounded-xl text-lg font-bold hover:bg-[#00BFFF] transition active:scale-95">
-          Submit Order →
+          Order & Pay →
         </button>
 
         <p class="text-center text-gray-500 text-xs">🔒 Your resume is encrypted and never shared. Payment details are handled separately after submission.</p>
@@ -218,29 +218,30 @@
   </footer>
 
   <script>
-    // Pre-select package from URL param
-    const params = new URLSearchParams(window.location.search);
-    const pkg = params.get('package');
-    if (pkg) {
-      document.querySelectorAll('input[name="package"]').forEach(r => {
-        r.checked = r.value === pkg;
+    // ── Package selector ──────────────────────────────────────────────────────
+    const IDLE_STYLE    = 'border:1.5px solid rgba(0,212,255,0.15); background:transparent; transform:scale(1) translateY(0); box-shadow:none; z-index:0; position:relative;';
+    const ACTIVE_STYLE  = 'border:2px solid #00D4FF; background:rgba(0,212,255,0.07); transform:scale(1.08) translateY(-4px); box-shadow:0 12px 36px rgba(0,212,255,0.28); z-index:1; position:relative;';
+
+    function selectPackage(value) {
+      // Deselect all
+      ['basic','standard','premium'].forEach(pkg => {
+        const btn = document.getElementById('pkg-btn-' + pkg);
+        if (btn) btn.style.cssText = IDLE_STYLE;
+        const radio = document.querySelector('input[value="' + pkg + '"]');
+        if (radio) radio.checked = false;
       });
-      document.getElementById('package-input').value = pkg;
+      // Select chosen
+      const activeBtn = document.getElementById('pkg-btn-' + value);
+      if (activeBtn) activeBtn.style.cssText = ACTIVE_STYLE;
+      const activeRadio = document.querySelector('input[value="' + value + '"]');
+      if (activeRadio) activeRadio.checked = true;
+      // Update hidden field
+      document.getElementById('package-input').value = value;
     }
 
-    // Package button visual selection
-    document.querySelectorAll('.package-option').forEach(opt => {
-      opt.addEventListener('click', () => {
-        document.querySelectorAll('.package-btn').forEach(b => {
-          b.classList.remove('border-[#00D4FF]','ring-2','ring-[#00D4FF40]');
-          b.classList.add('border-[#00D4FF20]');
-        });
-        const btn = opt.querySelector('.package-btn');
-        btn.classList.add('border-[#00D4FF]','ring-2','ring-[#00D4FF40]');
-        btn.classList.remove('border-[#00D4FF20]');
-        document.getElementById('package-input').value = opt.querySelector('input').value;
-      });
-    });
+    // Read URL param, default to 'standard' if none provided
+    const urlPkg = new URLSearchParams(window.location.search).get('package');
+    selectPackage(['basic','standard','premium'].includes(urlPkg) ? urlPkg : 'standard');
 
     // File name display
     document.getElementById('resume-upload').addEventListener('change', function() {
@@ -250,11 +251,11 @@
 
     // Drag and drop
     const dz = document.getElementById('drop-zone');
-    dz.addEventListener('dragover', e => { e.preventDefault(); dz.classList.add('border-[#00D4FF]'); });
-    dz.addEventListener('dragleave', () => dz.classList.remove('border-[#00D4FF]'));
+    dz.addEventListener('dragover', e => { e.preventDefault(); dz.style.borderColor = '#00D4FF'; });
+    dz.addEventListener('dragleave', () => dz.style.borderColor = '');
     dz.addEventListener('drop', e => {
       e.preventDefault();
-      dz.classList.remove('border-[#00D4FF]');
+      dz.style.borderColor = '';
       const input = document.getElementById('resume-upload');
       input.files = e.dataTransfer.files;
       input.dispatchEvent(new Event('change'));
