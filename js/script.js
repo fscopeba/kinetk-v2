@@ -56,8 +56,9 @@ if (resumeAfter) {
     { x: 40, opacity: 0 },
     { x: 0, opacity: 1, duration: 0.9, ease: 'power3.out', delay: 0.65 }
   );
+  // Subtle cyan glow pulse on white card
   gsap.to(resumeAfter, {
-    boxShadow: '0 24px 80px rgba(0,0,0,0.8), 0 0 60px rgba(0,212,255,0.28)',
+    boxShadow: '0 16px 60px rgba(0,0,0,0.7), 0 0 0 2px rgba(0,212,255,0.5), 0 0 50px rgba(0,212,255,0.25)',
     duration: 2.2,
     repeat: -1,
     yoyo: true,
