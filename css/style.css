@@ -144,6 +144,19 @@ form input:focus, form textarea:focus, form select:focus {
   overflow: hidden;
 }
 
+/* Energy pulse animation for before/after connector */
+@keyframes energyPulse {
+  0%, 100% { opacity: 0.6; transform: translate(-50%, -50%) scale(1); }
+  50%       { opacity: 1;   transform: translate(-50%, -50%) scale(1.3); }
+}
+
+/* Nav logo sizing */
+nav a img {
+  height: 30px;
+  width: auto;
+  object-fit: contain;
+}
+
 /* Scroll reveal base (invisible before JS runs) */
 .reveal {
   opacity: 0;

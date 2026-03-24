@@ -47,36 +47,21 @@ if (heroText) {
 }
 
 // ── Hero Images entrance ─────────────────────────────────────
-const heroImages = document.getElementById('hero-images');
-if (heroImages) {
-  const before = heroImages.querySelector('.img-before');
-  const after = heroImages.querySelector('.img-after');
-  if (before) {
-    gsap.from(before, {
-      x: -40,
-      opacity: 0,
-      duration: 0.9,
-      ease: 'power3.out',
-      delay: 0.4
-    });
-  }
-  if (after) {
-    gsap.from(after, {
-      x: 40,
-      opacity: 0,
-      duration: 0.9,
-      ease: 'power3.out',
-      delay: 0.6
-    });
-    // Perpetual glow pulse on the After card
-    gsap.to(after, {
-      boxShadow: '0 0 40px rgba(0,212,255,0.35)',
-      duration: 2.2,
-      repeat: -1,
-      yoyo: true,
-      ease: 'sine.inOut'
-    });
-  }
+const resumeBefore = document.getElementById('resume-before');
+const resumeAfter  = document.getElementById('resume-after');
+if (resumeBefore) {
+  gsap.from(resumeBefore, { x: -40, opacity: 0, duration: 0.9, ease: 'power3.out', delay: 0.4 });
+}
+if (resumeAfter) {
+  gsap.from(resumeAfter, { x: 40, opacity: 0, duration: 0.9, ease: 'power3.out', delay: 0.65 });
+  gsap.to(resumeAfter, {
+    boxShadow: '0 24px 80px rgba(0,0,0,0.8), 0 0 60px rgba(0,212,255,0.28)',
+    duration: 2.2,
+    repeat: -1,
+    yoyo: true,
+    ease: 'sine.inOut',
+    delay: 1.5
+  });
 }
 
 // ── Stat Counters ─────────────────────────────────────────────

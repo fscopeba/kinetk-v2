@@ -127,10 +127,96 @@
           <div><span class="text-emerald-400">✓</span> Money-back guarantee</div>
         </div>
       </div>
-      <!-- Before / After -->
-      <div class="before-after-wrap hidden md:block" id="hero-images">
-        <img src="images/before.png" alt="Before KINETK resume rewrite" class="img-before">
-        <img src="images/after.png" alt="After KINETK resume rewrite - ATS score 89" class="img-after" id="after">
+      <!-- Before / After Resume Graphic -->
+      <div class="hidden md:flex items-center justify-center relative" id="hero-images" style="min-height:480px;">
+
+        <!-- BEFORE card -->
+        <div id="resume-before" style="
+          position:absolute; left:0; top:20px;
+          width:52%; background:#0D1B35;
+          border-radius:14px; border:1px solid rgba(255,255,255,0.08);
+          box-shadow:0 20px 60px rgba(0,0,0,0.7);
+          padding:20px; z-index:1; font-family:-apple-system,sans-serif;
+          filter:saturate(0.5) brightness(0.75);
+        ">
+          <div style="font-size:9px;font-weight:700;letter-spacing:2px;color:#ff6b6b;text-transform:uppercase;margin-bottom:10px;">✕ Before KINETK</div>
+          <div style="font-size:13px;font-weight:700;color:#ccc;margin-bottom:2px;">Jordan Mitchell</div>
+          <div style="font-size:10px;color:#888;margin-bottom:12px;">marketing manager | looking for work</div>
+          <div style="font-size:8px;font-weight:700;letter-spacing:1px;color:#666;text-transform:uppercase;margin-bottom:6px;">Experience</div>
+          <div style="font-size:9px;color:#777;line-height:1.7;">
+            <div style="margin-bottom:4px;font-weight:600;color:#888;">Marketing at ABC Company (2019)</div>
+            <div>• Did marketing things and managed campaigns</div>
+            <div>• Worked with team members on projects</div>
+            <div>• Helped increase sales by doing stuff</div>
+          </div>
+          <div style="font-size:8px;font-weight:700;letter-spacing:1px;color:#666;text-transform:uppercase;margin:10px 0 6px;">Skills</div>
+          <div style="display:flex;flex-wrap:wrap;gap:4px;">
+            <span style="font-size:8px;background:#1a2a40;color:#666;padding:2px 6px;border-radius:4px;">Marketing</span>
+            <span style="font-size:8px;background:#1a2a40;color:#666;padding:2px 6px;border-radius:4px;">Teamwork</span>
+            <span style="font-size:8px;background:#1a2a40;color:#666;padding:2px 6px;border-radius:4px;">Microsoft Office</span>
+          </div>
+          <!-- ATS Score badge -->
+          <div style="margin-top:14px;display:flex;align-items:center;gap:8px;">
+            <div style="background:#1a0a0a;border:1px solid #ff4444;border-radius:8px;padding:6px 10px;text-align:center;">
+              <div style="font-size:8px;color:#ff6b6b;font-weight:600;">ATS Score</div>
+              <div style="font-size:18px;font-weight:900;color:#ff4444;">31</div>
+              <div style="font-size:7px;color:#666;">/100</div>
+            </div>
+            <div style="font-size:9px;color:#ff6b6b;">❌ Rejected by ATS<br><span style="color:#555;">Never seen by humans</span></div>
+          </div>
+        </div>
+
+        <!-- Energy swirl connector (CSS only) -->
+        <div style="
+          position:absolute; left:42%; top:50%; transform:translate(-50%,-50%);
+          width:60px; height:60px; z-index:5;
+          background:radial-gradient(circle, rgba(0,212,255,0.3) 0%, transparent 70%);
+          border-radius:50%;
+          animation:energyPulse 2s ease-in-out infinite;
+        "></div>
+        <div style="
+          position:absolute; left:42%; top:50%; transform:translate(-50%,-50%);
+          font-size:22px; z-index:6; color:#00D4FF;
+          animation:energyPulse 2s ease-in-out infinite;
+        ">→</div>
+
+        <!-- AFTER card -->
+        <div id="resume-after" style="
+          position:absolute; right:0; top:0;
+          width:60%; background:#0A1830;
+          border-radius:14px; border:2px solid rgba(0,212,255,0.5);
+          box-shadow:0 24px 80px rgba(0,0,0,0.8), 0 0 40px rgba(0,212,255,0.12);
+          padding:20px; z-index:2; font-family:-apple-system,sans-serif;
+        ">
+          <div style="font-size:9px;font-weight:700;letter-spacing:2px;color:#00D4FF;text-transform:uppercase;margin-bottom:10px;">✓ After KINETK</div>
+          <div style="font-size:14px;font-weight:700;color:#fff;margin-bottom:2px;">Jordan Mitchell</div>
+          <div style="font-size:10px;color:#00D4FF;margin-bottom:12px;">Senior Marketing Manager | B2B SaaS • 8 yrs exp</div>
+          <div style="font-size:8px;font-weight:700;letter-spacing:1px;color:#00D4FF80;text-transform:uppercase;margin-bottom:6px;">Experience</div>
+          <div style="font-size:9px;color:#ccc;line-height:1.7;">
+            <div style="margin-bottom:4px;font-weight:700;color:#fff;">Sr. Marketing Manager — TechCorp Inc. (2019–Present)</div>
+            <div>• Drove <span style="color:#00D4FF;font-weight:600;">340% pipeline growth</span> via targeted ABM campaigns</div>
+            <div>• Led cross-functional team of 8; managed $2.4M annual budget</div>
+            <div>• Increased MQL→SQL conversion <span style="color:#00D4FF;font-weight:600;">from 18% → 47%</span></div>
+          </div>
+          <div style="font-size:8px;font-weight:700;letter-spacing:1px;color:#00D4FF80;text-transform:uppercase;margin:10px 0 6px;">ATS Keywords</div>
+          <div style="display:flex;flex-wrap:wrap;gap:4px;">
+            <span style="font-size:8px;background:#00D4FF18;color:#00D4FF;border:1px solid #00D4FF30;padding:2px 7px;border-radius:4px;">ABM</span>
+            <span style="font-size:8px;background:#00D4FF18;color:#00D4FF;border:1px solid #00D4FF30;padding:2px 7px;border-radius:4px;">Pipeline Growth</span>
+            <span style="font-size:8px;background:#00D4FF18;color:#00D4FF;border:1px solid #00D4FF30;padding:2px 7px;border-radius:4px;">Revenue Operations</span>
+            <span style="font-size:8px;background:#00D4FF18;color:#00D4FF;border:1px solid #00D4FF30;padding:2px 7px;border-radius:4px;">MQL/SQL</span>
+            <span style="font-size:8px;background:#00D4FF18;color:#00D4FF;border:1px solid #00D4FF30;padding:2px 7px;border-radius:4px;">SaaS Growth</span>
+          </div>
+          <!-- ATS Score badge -->
+          <div style="margin-top:14px;display:flex;align-items:center;gap:8px;">
+            <div style="background:#001a2a;border:2px solid #00D4FF;border-radius:8px;padding:6px 10px;text-align:center;">
+              <div style="font-size:8px;color:#00D4FF;font-weight:600;">ATS Score</div>
+              <div style="font-size:22px;font-weight:900;color:#00D4FF;" id="after">89</div>
+              <div style="font-size:7px;color:#aaa;">/100</div>
+            </div>
+            <div style="font-size:9px;color:#aaa;">✅ <span style="color:#00D4FF;font-weight:600;">Passes every ATS</span><br>Human recruiter reviewed</div>
+          </div>
+        </div>
+
       </div>
     </div>
   </section>
