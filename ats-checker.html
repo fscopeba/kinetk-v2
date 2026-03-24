@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Free ATS Score Check - KINETK</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+</head>
+<body class="bg-[#0A1428] text-white font-sans">
+
+  <!-- NAV (same as homepage) -->
+  <nav class="fixed top-0 w-full bg-[#0A1428]/90 backdrop-blur z-50 border-b border-[#00D4FF20]">
+    <div class="max-w-7xl mx-auto px-6 py-5 flex justify-between items-center">
+      <img src="images/logo.png" alt="KINETK" class="h-10">
+      <div class="space-x-8 text-sm hidden md:flex">
+        <a href="index.html" class="hover:text-[#00D4FF]">Home</a>
+        <a href="index.html#how" class="hover:text-[#00D4FF]">How It Works</a>
+        <a href="index.html#packages" class="hover:text-[#00D4FF]">Packages</a>
+      </div>
+      <a href="contact.html" class="bg-[#00D4FF] text-[#0A1428] px-8 py-3 rounded-xl font-semibold">Talk to Recruiter</a>
+    </div>
+  </nav>
+
+  <!-- MAIN CONTENT -->
+  <section class="pt-32 pb-20 min-h-screen flex items-center">
+    <div class="max-w-4xl mx-auto px-6 text-center">
+      <h1 class="text-5xl md:text-6xl font-bold mb-8">Free ATS Score Check</h1>
+      <p class="text-2xl text-gray-300 mb-12">Upload your resume — get your ATS score in 30 seconds. No email, no card required.</p>
+
+      <!-- Upload Form -->
+      <div class="bg-[#0F1E42]/70 p-12 rounded-3xl border border-[#00D4FF30] max-w-2xl mx-auto">
+        <div class="border-2 border-dashed border-[#00D4FF40] rounded-2xl p-12 text-center hover:border-[#00D4FF] transition cursor-pointer" id="dropZone">
+          <p class="text-3xl mb-4">📄</p>
+          <p class="text-xl font-semibold mb-2">Drag & Drop Your Resume</p>
+          <p class="text-gray-400 mb-6">or click to browse (PDF, DOCX, max 5MB)</p>
+          <input type="file" id="resumeUpload" accept=".pdf,.doc,.docx" class="hidden">
+          <button onclick="document.getElementById('resumeUpload').click()" class="bg-[#00D4FF] text-[#0A1428] px-10 py-4 rounded-xl font-bold">
+            Upload Resume
+          </button>
+        </div>
+
+        <!-- Results Placeholder (shown after upload) -->
+        <div id="results" class="mt-12 hidden">
+          <h2 class="text-4xl font-bold mb-6">Your ATS Score: <span id="score" class="text-[#00D4FF]">Loading...</span></h2>
+          <p class="text-xl mb-8">You're currently at risk — but we can fix it in 48 hours.</p>
+          <a href="index.html#packages" class="bg-[#00D4FF] text-[#0A1428] px-12 py-6 rounded-2xl text-xl font-bold inline-block hover:bg-[#00BFFF]">
+            See How to Boost to 90+
+          </a>
+        </div>
+      </div>
+
+      <p class="mt-10 text-gray-400">Confidential • Secure • No spam. Your data is deleted after analysis.</p>
+    </div>
+  </section>
+
+  <script src="js/script.js"></script>
+  <script>
+    // Simple mock upload simulation
+    document.getElementById('resumeUpload').addEventListener('change', function(e) {
+      if (e.target.files.length > 0) {
+        const results = document.getElementById('results');
+        const score = document.getElementById('score');
+        results.classList.remove('hidden');
+        score.textContent = '...';
+        // Simulate analysis
+        setTimeout(() => {
+          const randomScore = Math.floor(Math.random() * 30) + 25; // 25-55 range (low)
+          score.textContent = randomScore + '/100';
+          gsap.from(results, { y: 30, opacity: 0, duration: 0.8, ease: "power2.out" });
+        }, 2000);
+      }
+    });
+
+    // Drop zone interaction
+    const dropZone = document.getElementById('dropZone');
+    dropZone.addEventListener('dragover', (e) => { e.preventDefault(); dropZone.style.borderColor = '#00D4FF'; });
+    dropZone.addEventListener('dragleave', () => { dropZone.style.borderColor = '#00D4FF40'; });
+    dropZone.addEventListener('drop', (e) => {
+      e.preventDefault();
+      dropZone.style.borderColor = '#00D4FF40';
+      document.getElementById('resumeUpload').files = e.dataTransfer.files;
+      document.getElementById('resumeUpload').dispatchEvent(new Event('change'));
+    });
+  </script>
+</body>
+</html>
