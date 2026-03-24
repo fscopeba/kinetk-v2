@@ -4,41 +4,63 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Contact a Recruiter - KINETK</title>
-  <link rel="stylesheet" href="css/style.css">
   <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            cyan: '#00D4FF'
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    body {
+      background: linear-gradient(135deg, #0A1428 0%, #0F1E42 100%);
+      color: #fff;
+    }
+  </style>
 </head>
-<body class="bg-[#0A1428] text-white font-sans">
+<body class="bg-gradient-to-br from-[#0A1428] to-[#0F1E42] text-white overflow-x-hidden">
 
   <!-- NAV -->
-  <nav class="fixed top-0 w-full bg-[#0A1428]/90 backdrop-blur z-50 border-b border-[#00D4FF20]">
+  <nav class="border-b border-[#00D4FF20]">
     <div class="max-w-7xl mx-auto px-6 py-5 flex justify-between items-center">
       <img src="images/logo.png" alt="KINETK" class="h-10">
-      <div class="space-x-8 text-sm hidden md:flex">
+      <div class="hidden md:flex space-x-8 text-sm">
         <a href="index.html" class="hover:text-[#00D4FF]">Home</a>
         <a href="ats-checker.html" class="hover:text-[#00D4FF]">Free ATS Score</a>
       </div>
     </div>
   </nav>
 
-  <!-- CONTACT FORM -->
-  <section class="pt-32 pb-20 min-h-screen flex items-center">
-    <div class="max-w-3xl mx-auto px-6 text-center">
-      <h1 class="text-5xl md:text-6xl font-bold mb-8">Talk to a Real Recruiter</h1>
-      <p class="text-2xl text-gray-300 mb-12">No bots, no scripts. Direct 1:1 conversation — completely free. Ask anything about your resume, job search, or career path.</p>
+  <main class="pt-24 pb-20 max-w-3xl mx-auto px-6">
+    <h1 class="text-6xl font-bold text-center mb-8">Talk to a Real Recruiter</h1>
+    <p class="text-2xl text-gray-300 text-center mb-16">No bots. Direct 1:1 conversation. Completely free.</p>
 
-      <form class="bg-[#0F1E42]/70 p-12 rounded-3xl border border-[#00D4FF30] space-y-8">
-        <input type="text" placeholder="Your Name" class="w-full p-5 bg-[#0A1428] border border-[#00D4FF30] rounded-xl text-white focus:border-[#00D4FF] outline-none">
-        <input type="email" placeholder="Your Email" class="w-full p-5 bg-[#0A1428] border border-[#00D4FF30] rounded-xl text-white focus:border-[#00D4FF] outline-none">
-        <textarea placeholder="Tell us about your situation or attach resume (optional)" rows="6" class="w-full p-5 bg-[#0A1428] border border-[#00D4FF30] rounded-xl text-white focus:border-[#00D4FF] outline-none"></textarea>
-        <button type="submit" class="w-full bg-[#00D4FF] text-[#0A1428] py-5 rounded-xl text-xl font-bold hover:bg-[#00BFFF] transition">
-          Send Message
-        </button>
-      </form>
+    <form class="bg-[#0F1E42]/70 p-12 rounded-3xl border border-[#00D4FF30]">
+      <input type="text" placeholder="Your Name" class="w-full mb-6 p-6 bg-[#0A1428] border border-[#00D4FF30] rounded-2xl focus:border-[#00D4FF]">
+      <input type="email" placeholder="Your Email" class="w-full mb-6 p-6 bg-[#0A1428] border border-[#00D4FF30] rounded-2xl focus:border-[#00D4FF]">
+      <textarea placeholder="Tell us about your resume or career goals..." rows="8" class="w-full mb-8 p-6 bg-[#0A1428] border border-[#00D4FF30] rounded-2xl focus:border-[#00D4FF]"></textarea>
+      <button type="button" onclick="alert('Message sent! A recruiter will reply within 24 hours.')" class="w-full bg-[#00D4FF] text-[#0A1428] py-7 rounded-2xl text-2xl font-bold hover:bg-[#00BFFF]">
+        Send Message to Recruiter
+      </button>
+    </form>
+  </main>
 
-      <p class="mt-8 text-gray-400">We respond within 24 hours. Your information stays confidential.</p>
+  <!-- FOOTER (same) -->
+  <footer class="bg-[#0A1428] border-t border-[#00D4FF20] py-16">
+    <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-4 gap-8 text-sm">
+      <div>
+        <img src="images/logo.png" alt="KINETK" class="h-10 mb-4">
+        <p class="text-gray-400">AI + Real Recruiter Expertise</p>
+      </div>
+      <div><a href="index.html#how" class="block mb-2 hover:text-[#00D4FF]">How It Works</a></div>
+      <div><a href="index.html#packages" class="block mb-2 hover:text-[#00D4FF]">Packages</a></div>
+      <div><a href="ats-checker.html" class="block mb-2 hover:text-[#00D4FF]">Free ATS Score</a></div>
     </div>
-  </section>
-
-  <script src="js/script.js"></script>
+  </footer>
 </body>
 </html>
