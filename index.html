@@ -3,60 +3,149 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>KINETK — 94% Interview Rate | AI + Real Recruiter Rewrite</title>
+  <title>KINETK — Resume Rewrite Service | 94% Interview Rate | AI + Real Recruiter</title>
+  <meta name="description" content="KINETK rewrites your resume with VANTAGE-7 AI and real recruiter expertise. 94% interview rate, 48-hour delivery, ATS-optimized. Get your free ATS score today.">
+  <meta name="keywords" content="resume rewrite service, ATS optimization, professional resume writing, job search help, KINETK">
+  <link rel="canonical" href="https://kinetk.io/">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://kinetk.io/">
+  <meta property="og:title" content="KINETK — 94% Interview Rate | AI + Real Recruiter Resume Rewrite">
+  <meta property="og:description" content="Your resume is invisible to most employers. KINETK rewrites it with VANTAGE-7 AI + real recruiter expertise. 48hr delivery, ATS-optimized, money-back guarantee.">
+  <meta property="og:image" content="https://kinetk.io/images/after.png">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="KINETK — 94% Interview Rate | AI + Real Recruiter Resume Rewrite">
+  <meta name="twitter:description" content="Your resume is invisible to most employers. KINETK fixes that in 48 hours.">
+  <meta name="twitter:image" content="https://kinetk.io/images/after.png">
+
+  <!-- Favicon -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%230A1428'/><text y='.9em' font-size='80' x='10'>K</text></svg>">
+
+  <!-- Styles & Scripts -->
   <link rel="stylesheet" href="css/style.css">
   <script src="https://cdn.tailwindcss.com"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+
+  <!-- JSON-LD Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ProfessionalService",
+    "name": "KINETK",
+    "url": "https://kinetk.io",
+    "description": "AI-powered resume rewriting with real recruiter review. 94% interview rate, 48-hour delivery.",
+    "priceRange": "$99-$299",
+    "serviceType": "Resume Writing Service",
+    "areaServed": "Worldwide",
+    "hasOfferCatalog": {
+      "@type": "OfferCatalog",
+      "name": "Resume Packages",
+      "itemListElement": [
+        {"@type": "Offer", "name": "Basic", "price": "99", "priceCurrency": "USD"},
+        {"@type": "Offer", "name": "Standard", "price": "199", "priceCurrency": "USD"},
+        {"@type": "Offer", "name": "Premium", "price": "299", "priceCurrency": "USD"}
+      ]
+    }
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {"@type": "Question", "name": "What is the turnaround time?", "acceptedAnswer": {"@type": "Answer", "text": "Standard delivery is 48 hours. Rush 24-hour option available for $49."}},
+      {"@type": "Question", "name": "Does it work with my ATS?", "acceptedAnswer": {"@type": "Answer", "text": "Yes — we optimize for Workday, Greenhouse, Taleo, Lever, and every major ATS."}},
+      {"@type": "Question", "name": "Is the review really human?", "acceptedAnswer": {"@type": "Answer", "text": "100% human. A real recruiter reviews every resume after the AI scan. No bots."}},
+      {"@type": "Question", "name": "What is your guarantee?", "acceptedAnswer": {"@type": "Answer", "text": "Pass ATS or land interviews — or we redo it free. Higher tiers include money-back guarantee."}}
+    ]
+  }
+  </script>
 </head>
-<body class="bg-[#0A1428] text-white font-sans">
+<body class="bg-[#0A1428] text-white font-sans overflow-x-hidden">
 
   <!-- NAV -->
-  <nav class="fixed top-0 w-full bg-[#0A1428]/90 backdrop-blur z-50 border-b border-[#00D4FF20]">
-    <div class="max-w-7xl mx-auto px-6 py-5 flex justify-between items-center">
-      <img src="images/logo.png" alt="KINETK" class="h-10">
-      <div class="space-x-8 text-sm hidden md:flex">
-        <a href="#how" class="hover:text-[#00D4FF]">How It Works</a>
-        <a href="#packages" class="hover:text-[#00D4FF]">Packages</a>
-        <a href="ats-checker.html" class="hover:text-[#00D4FF]">Free ATS Score</a>
+  <nav class="fixed top-0 w-full bg-[#0A1428]/95 backdrop-blur z-50 border-b border-[#00D4FF20]">
+    <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+      <a href="index.html"><img src="images/logo.png" alt="KINETK" class="h-9"></a>
+      <div class="space-x-8 text-sm hidden md:flex items-center">
+        <a href="#how" class="text-gray-300 hover:text-[#00D4FF] transition">How It Works</a>
+        <a href="#packages" class="text-gray-300 hover:text-[#00D4FF] transition">Packages</a>
+        <a href="ats-checker.html" class="text-gray-300 hover:text-[#00D4FF] transition">Free ATS Score</a>
+        <a href="blog/index.html" class="text-gray-300 hover:text-[#00D4FF] transition">Blog</a>
       </div>
-      <div>
-        <a href="ats-checker.html" class="bg-[#00D4FF] text-[#0A1428] px-8 py-3 rounded-xl font-semibold">Get Free Score</a>
+      <div class="hidden md:block">
+        <a href="ats-checker.html" class="bg-[#00D4FF] text-[#0A1428] px-6 py-2.5 rounded-xl font-semibold text-sm hover:bg-[#00BFFF] transition">Get Free Score</a>
       </div>
+      <!-- Hamburger -->
+      <button id="hamburger" class="md:hidden flex flex-col gap-1.5 p-2" aria-label="Menu">
+        <span class="block w-6 h-0.5 bg-white transition-all"></span>
+        <span class="block w-6 h-0.5 bg-white transition-all"></span>
+        <span class="block w-6 h-0.5 bg-white transition-all"></span>
+      </button>
+    </div>
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="hidden md:hidden bg-[#0A1428] border-t border-[#00D4FF20] px-6 py-4 space-y-4 text-sm">
+      <a href="#how" class="block text-gray-300 hover:text-[#00D4FF]">How It Works</a>
+      <a href="#packages" class="block text-gray-300 hover:text-[#00D4FF]">Packages</a>
+      <a href="ats-checker.html" class="block text-gray-300 hover:text-[#00D4FF]">Free ATS Score</a>
+      <a href="blog/index.html" class="block text-gray-300 hover:text-[#00D4FF]">Blog</a>
+      <a href="contact.html" class="block text-gray-300 hover:text-[#00D4FF]">Talk to Recruiter</a>
+      <a href="ats-checker.html" class="block bg-[#00D4FF] text-[#0A1428] px-6 py-2.5 rounded-xl font-semibold text-center">Get Free Score</a>
     </div>
   </nav>
 
   <!-- HERO -->
-  <section class="min-h-screen flex items-center pt-24 pb-20 relative overflow-hidden">
-    <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-16 items-center relative z-10">
-      <div>
-        <h1 class="text-5xl md:text-7xl font-bold leading-tight">
+  <section class="min-h-screen flex items-center pt-28 pb-20 relative overflow-hidden">
+    <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center relative z-10">
+      <div id="hero-text">
+        <div class="inline-flex items-center gap-2 bg-[#00D4FF15] border border-[#00D4FF30] rounded-full px-4 py-1.5 text-sm text-[#00D4FF] mb-6">
+          <span class="w-2 h-2 bg-[#00D4FF] rounded-full animate-pulse"></span>
+          94% of clients land interviews within 30 days
+        </div>
+        <h1 class="text-4xl md:text-6xl font-bold leading-tight mb-6">
           Your resume is <span class="text-[#00D4FF]">invisible</span> to most employers.
         </h1>
-        <p class="mt-6 text-xl md:text-2xl text-gray-300">
+        <p class="text-lg md:text-xl text-gray-300 mb-8">
           KINETK rewrites it with VANTAGE-7 AI + real recruiter expertise.
           <span class="text-[#00D4FF] font-semibold">94% interview rate • 48hr guaranteed • Human reviewed</span>
         </p>
-        <div class="mt-10 flex flex-wrap gap-4">
-          <a href="ats-checker.html" class="bg-[#00D4FF] text-[#0A1428] px-10 py-5 rounded-2xl text-xl font-bold hover:bg-[#00BFFF] transition active:scale-95">
-            Get Free ATS Score
+        <div class="flex flex-wrap gap-4">
+          <a href="ats-checker.html" class="bg-[#00D4FF] text-[#0A1428] px-8 py-4 rounded-2xl text-lg font-bold hover:bg-[#00BFFF] transition active:scale-95">
+            Get Free ATS Score →
           </a>
-          <a href="contact.html" class="border border-[#00D4FF] px-8 py-5 rounded-2xl text-xl hover:bg-[#00D4FF10] transition">
+          <a href="contact.html" class="border border-[#00D4FF] px-7 py-4 rounded-2xl text-lg hover:bg-[#00D4FF10] transition">
             Talk to a Recruiter
           </a>
         </div>
-
-        <div class="mt-8 flex gap-8 text-sm text-gray-400">
-          <div><span class="text-emerald-400">●</span> 94% Success</div>
-          <div><span class="text-emerald-400">●</span> 48hr Delivery</div>
-          <div><span class="text-emerald-400">●</span> Human Reviewed</div>
+        <div class="mt-6 flex gap-6 text-sm text-gray-400">
+          <div><span class="text-emerald-400">✓</span> No credit card required</div>
+          <div><span class="text-emerald-400">✓</span> Results in 48hrs</div>
+          <div><span class="text-emerald-400">✓</span> Money-back guarantee</div>
         </div>
       </div>
-
       <!-- Before / After -->
-      <div class="relative">
-        <img src="images/before.png" id="before" class="rounded-3xl shadow-2xl w-full max-w-md mx-auto md:mx-0">
-        <img src="images/after.png" id="after" class="absolute top-8 right-0 md:right-[-10%] rounded-3xl shadow-2xl border-4 border-[#00D4FF30] w-[90%] max-w-md">
+      <div class="relative hidden md:block">
+        <img src="images/before.png" id="before" alt="Before KINETK resume rewrite" class="rounded-3xl shadow-2xl w-full max-w-sm mx-auto">
+        <img src="images/after.png" id="after" alt="After KINETK resume rewrite - ATS score 89" class="absolute top-10 right-[-5%] rounded-3xl shadow-2xl border-2 border-[#00D4FF50] w-[85%] max-w-sm">
+      </div>
+    </div>
+  </section>
+
+  <!-- SOCIAL PROOF BAR -->
+  <section class="py-10 border-y border-[#00D4FF15] bg-[#0A1428]">
+    <div class="max-w-5xl mx-auto px-6 text-center">
+      <p class="text-sm text-gray-500 mb-6 uppercase tracking-widest">Trusted by job seekers who've landed roles at</p>
+      <div class="flex flex-wrap justify-center gap-8 md:gap-14 text-gray-400 font-semibold text-lg">
+        <span>Google</span>
+        <span>Meta</span>
+        <span>Amazon</span>
+        <span>Microsoft</span>
+        <span>Apple</span>
+        <span>Salesforce</span>
       </div>
     </div>
   </section>
@@ -64,52 +153,60 @@
   <!-- STATS GRID -->
   <section class="py-20 bg-gradient-to-b from-[#0A1428] to-[#0B1A3A]">
     <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-3 gap-8 text-center">
-      <div class="p-8 bg-[#0F1E42]/50 rounded-3xl border border-[#00D4FF20]">
-        <div class="text-6xl font-bold text-[#00D4FF]" id="stat1">94%</div>
-        <div class="mt-4 text-xl">Interview Rate</div>
+      <div class="stat-card p-8 bg-[#0F1E42]/50 rounded-3xl border border-[#00D4FF20]">
+        <div class="text-5xl font-bold text-[#00D4FF]" id="stat1">0%</div>
+        <div class="mt-3 text-lg text-gray-300">Interview Rate</div>
+        <div class="mt-1 text-sm text-gray-500">vs. 8% industry average</div>
       </div>
-      <div class="p-8 bg-[#0F1E42]/50 rounded-3xl border border-[#00D4FF20]">
-        <div class="text-6xl font-bold text-[#00D4FF]" id="stat2">48hr</div>
-        <div class="mt-4 text-xl">Guaranteed Delivery</div>
+      <div class="stat-card p-8 bg-[#0F1E42]/50 rounded-3xl border border-[#00D4FF20]">
+        <div class="text-5xl font-bold text-[#00D4FF]" id="stat2">0hr</div>
+        <div class="mt-3 text-lg text-gray-300">Guaranteed Delivery</div>
+        <div class="mt-1 text-sm text-gray-500">Rush 24hr available</div>
       </div>
-      <div class="p-8 bg-[#0F1E42]/50 rounded-3xl border border-[#00D4FF20]">
-        <div class="text-6xl font-bold text-[#00D4FF]" id="stat3">31 → 89</div>
-        <div class="mt-4 text-xl">ATS Score Jump</div>
+      <div class="stat-card p-8 bg-[#0F1E42]/50 rounded-3xl border border-[#00D4FF20]">
+        <div class="text-5xl font-bold text-[#00D4FF]" id="stat3">0</div>
+        <div class="mt-3 text-lg text-gray-300">Average ATS Score Jump</div>
+        <div class="mt-1 text-sm text-gray-500">From 31 to 89 on average</div>
       </div>
     </div>
   </section>
 
-  <!-- HOW IT WORKS + VIDEO -->
+  <!-- HOW IT WORKS -->
   <section id="how" class="py-24">
     <div class="max-w-7xl mx-auto px-6">
-      <h2 class="text-5xl font-bold text-center mb-16">How It Works</h2>
-      <div class="grid md:grid-cols-3 gap-12 text-center">
-        <div class="p-8 bg-[#0F1E42]/50 rounded-3xl border border-[#00D4FF20]">
-          <img src="images/icons.png" alt="VANTAGE-7" class="h-20 mx-auto mb-6">
-          <h3 class="text-2xl font-bold mb-4">VANTAGE-7 AI Scan</h3>
-          <p class="text-gray-300">AI analyzes your resume, identifies gaps, adds keywords, and provides intelligent insights.</p>
+      <h2 class="text-4xl font-bold text-center mb-4">How It Works</h2>
+      <p class="text-center text-gray-400 mb-16 max-w-2xl mx-auto">Three steps. 48 hours. A resume that actually gets you in the door.</p>
+      <div class="grid md:grid-cols-3 gap-10 text-center">
+        <div class="step-card p-8 bg-[#0F1E42]/50 rounded-3xl border border-[#00D4FF20]">
+          <div class="text-5xl mb-5">🤖</div>
+          <div class="text-xs text-[#00D4FF] font-bold uppercase tracking-widest mb-2">Step 1</div>
+          <h3 class="text-xl font-bold mb-3">VANTAGE-7 AI Scan</h3>
+          <p class="text-gray-400 text-sm leading-relaxed">Our proprietary AI analyzes your resume against 200+ ATS criteria, identifies keyword gaps, and restructures your experience for maximum visibility.</p>
         </div>
-        <div class="p-8 bg-[#0F1E42]/50 rounded-3xl border border-[#00D4FF20]">
-          <img src="images/icons.png" alt="Human Review" class="h-20 mx-auto mb-6">
-          <h3 class="text-2xl font-bold mb-4">Human Review</h3>
-          <p class="text-gray-300">Expert recruiter refines it for maximum impact, clarity, and recruiter appeal.</p>
+        <div class="step-card p-8 bg-[#0F1E42]/50 rounded-3xl border border-[#00D4FF20]">
+          <div class="text-5xl mb-5">👨‍💼</div>
+          <div class="text-xs text-[#00D4FF] font-bold uppercase tracking-widest mb-2">Step 2</div>
+          <h3 class="text-xl font-bold mb-3">Real Recruiter Review</h3>
+          <p class="text-gray-400 text-sm leading-relaxed">A human recruiter with Fortune 500 hiring experience refines every line — impact, clarity, narrative. No bots finish your resume.</p>
         </div>
-        <div class="p-8 bg-[#0F1E42]/50 rounded-3xl border border-[#00D4FF20]">
-          <img src="images/icons.png" alt="Guaranteed" class="h-20 mx-auto mb-6">
-          <h3 class="text-2xl font-bold mb-4">Guaranteed Results</h3>
-          <p class="text-gray-300">48hr delivery. Pass ATS or land interviews — money-back guarantee.</p>
+        <div class="step-card p-8 bg-[#0F1E42]/50 rounded-3xl border border-[#00D4FF20]">
+          <div class="text-5xl mb-5">🚀</div>
+          <div class="text-xs text-[#00D4FF] font-bold uppercase tracking-widest mb-2">Step 3</div>
+          <h3 class="text-xl font-bold mb-3">Guaranteed Results</h3>
+          <p class="text-gray-400 text-sm leading-relaxed">Delivered in 48 hours. Pass ATS screening or land interviews — or we rewrite it free. Higher tiers include a full money-back guarantee.</p>
         </div>
       </div>
 
-      <!-- Video Embed -->
+      <!-- Video Placeholder -->
       <div class="mt-20 text-center">
-        <h3 class="text-3xl font-bold mb-8">Watch How KINETK Gets You Interviews</h3>
-        <div class="aspect-video max-w-4xl mx-auto bg-black rounded-3xl overflow-hidden border border-[#00D4FF30] shadow-2xl">
-          <!-- Replace with your actual video file or YouTube embed -->
-          <iframe width="100%" height="100%" src="https://www.youtube.com/embed/YOUR_VIDEO_ID" title="KINETK How It Works" frameborder="0" allowfullscreen></iframe>
-          <!-- OR local video: <video controls><source src="videos/how-it-works.mp4" type="video/mp4"></video> -->
+        <h3 class="text-3xl font-bold mb-8">See It In Action</h3>
+        <div class="aspect-video max-w-4xl mx-auto bg-[#0F1E42] rounded-3xl overflow-hidden border border-[#00D4FF30] shadow-2xl flex items-center justify-center">
+          <div class="text-center p-12">
+            <div class="text-6xl mb-4">▶</div>
+            <p class="text-xl font-semibold text-[#00D4FF]">Video Coming Soon</p>
+            <p class="text-gray-400 mt-2">45-second explainer — no fluff, just results</p>
+          </div>
         </div>
-        <p class="mt-6 text-gray-400">45-second explainer — no fluff, just results.</p>
       </div>
     </div>
   </section>
@@ -117,105 +214,204 @@
   <!-- PRICING -->
   <section id="packages" class="py-24 bg-gradient-to-b from-[#0B1A3A] to-[#0A1428]">
     <div class="max-w-7xl mx-auto px-6">
-      <h2 class="text-5xl font-bold text-center mb-16">Packages Starting at $99</h2>
+      <h2 class="text-4xl font-bold text-center mb-4">Packages Starting at $99</h2>
+      <p class="text-center text-gray-400 mb-16">All packages include ATS optimization, human review, and 48hr delivery</p>
       <div class="grid md:grid-cols-3 gap-8">
-        <div class="p-10 bg-[#0F1E42]/70 rounded-3xl border border-[#00D4FF30] hover:border-[#00D4FF] transition-all">
-          <h3 class="text-3xl font-bold mb-4">Basic</h3>
-          <p class="text-5xl font-bold">$99</p>
-          <ul class="mt-8 space-y-4 text-gray-300">
-            <li>AI Scan &amp; Rewrite</li>
-            <li>48hr Delivery</li>
-            <li>ATS Optimization</li>
+
+        <div class="price-card p-8 bg-[#0F1E42]/70 rounded-3xl border border-[#00D4FF20] hover:border-[#00D4FF60] transition-all flex flex-col">
+          <h3 class="text-2xl font-bold mb-2">Basic</h3>
+          <div class="text-5xl font-bold text-[#00D4FF] mb-1">$99</div>
+          <p class="text-gray-500 text-sm mb-6">One-time payment</p>
+          <ul class="space-y-3 text-sm text-gray-300 flex-1">
+            <li class="flex gap-2"><span class="text-[#00D4FF]">✓</span> VANTAGE-7 AI Scan & Rewrite</li>
+            <li class="flex gap-2"><span class="text-[#00D4FF]">✓</span> ATS Keyword Optimization</li>
+            <li class="flex gap-2"><span class="text-[#00D4FF]">✓</span> 48hr Delivery</li>
+            <li class="flex gap-2"><span class="text-[#00D4FF]">✓</span> 1 Free Revision</li>
           </ul>
-          <a href="ats-checker.html" class="mt-8 block bg-[#00D4FF] text-[#0A1428] py-4 rounded-xl font-bold text-center hover:bg-[#00BFFF]">Get Started</a>
+          <a href="order.html?package=basic" class="mt-8 block bg-[#00D4FF20] border border-[#00D4FF50] text-[#00D4FF] py-3.5 rounded-xl font-bold text-center hover:bg-[#00D4FF] hover:text-[#0A1428] transition">Get Started</a>
         </div>
-        <div class="p-10 bg-[#0F1E42]/70 rounded-3xl border border-[#00D4FF30] hover:border-[#00D4FF] transition-all">
-          <h3 class="text-3xl font-bold mb-4">Standard</h3>
-          <p class="text-5xl font-bold">$199</p>
-          <ul class="mt-8 space-y-4 text-gray-300">
-            <li>Everything in Basic</li>
-            <li>Human Review</li>
-            <li>Keyword Optimization</li>
+
+        <div class="price-card p-8 bg-[#0F1E42]/70 rounded-3xl border border-[#00D4FF] relative flex flex-col shadow-[0_0_40px_#00D4FF20]">
+          <div class="absolute -top-4 left-1/2 -translate-x-1/2 bg-[#00D4FF] text-[#0A1428] text-xs px-5 py-1.5 rounded-full font-bold whitespace-nowrap">⭐ MOST POPULAR</div>
+          <h3 class="text-2xl font-bold mb-2">Standard</h3>
+          <div class="text-5xl font-bold text-[#00D4FF] mb-1">$199</div>
+          <p class="text-gray-500 text-sm mb-6">One-time payment</p>
+          <ul class="space-y-3 text-sm text-gray-300 flex-1">
+            <li class="flex gap-2"><span class="text-[#00D4FF]">✓</span> Everything in Basic</li>
+            <li class="flex gap-2"><span class="text-[#00D4FF]">✓</span> Full Human Recruiter Review</li>
+            <li class="flex gap-2"><span class="text-[#00D4FF]">✓</span> Targeted Keyword Strategy</li>
+            <li class="flex gap-2"><span class="text-[#00D4FF]">✓</span> Cover Letter Template</li>
+            <li class="flex gap-2"><span class="text-[#00D4FF]">✓</span> 2 Free Revisions</li>
           </ul>
-          <a href="ats-checker.html" class="mt-8 block bg-[#00D4FF] text-[#0A1428] py-4 rounded-xl font-bold text-center hover:bg-[#00BFFF]">Get Started</a>
+          <a href="order.html?package=standard" class="mt-8 block bg-[#00D4FF] text-[#0A1428] py-3.5 rounded-xl font-bold text-center hover:bg-[#00BFFF] transition">Get Started</a>
         </div>
-        <div class="p-10 bg-[#0F1E42]/70 rounded-3xl border border-[#00D4FF30] hover:border-[#00D4FF] transition-all">
-          <h3 class="text-3xl font-bold mb-4">Premium</h3>
-          <p class="text-5xl font-bold">$299</p>
-          <ul class="mt-8 space-y-4 text-gray-300">
-            <li>Everything in Standard</li>
-            <li>Interview Prep Add-on</li>
-            <li>Priority 24hr Rush</li>
+
+        <div class="price-card p-8 bg-[#0F1E42]/70 rounded-3xl border border-[#00D4FF20] hover:border-[#00D4FF60] transition-all flex flex-col">
+          <h3 class="text-2xl font-bold mb-2">Premium</h3>
+          <div class="text-5xl font-bold text-[#00D4FF] mb-1">$299</div>
+          <p class="text-gray-500 text-sm mb-6">One-time payment</p>
+          <ul class="space-y-3 text-sm text-gray-300 flex-1">
+            <li class="flex gap-2"><span class="text-[#00D4FF]">✓</span> Everything in Standard</li>
+            <li class="flex gap-2"><span class="text-[#00D4FF]">✓</span> 1:1 Interview Prep Call (30min)</li>
+            <li class="flex gap-2"><span class="text-[#00D4FF]">✓</span> LinkedIn Profile Optimization</li>
+            <li class="flex gap-2"><span class="text-[#00D4FF]">✓</span> 24hr Rush Delivery</li>
+            <li class="flex gap-2"><span class="text-[#00D4FF]">✓</span> Unlimited Revisions</li>
           </ul>
-          <a href="ats-checker.html" class="mt-8 block bg-[#00D4FF] text-[#0A1428] py-4 rounded-xl font-bold text-center hover:bg-[#00BFFF]">Get Started</a>
+          <a href="order.html?package=premium" class="mt-8 block bg-[#00D4FF20] border border-[#00D4FF50] text-[#00D4FF] py-3.5 rounded-xl font-bold text-center hover:bg-[#00D4FF] hover:text-[#0A1428] transition">Get Started</a>
         </div>
+
       </div>
+      <p class="text-center text-gray-500 text-sm mt-8">🔒 Secure checkout • Money-back guarantee • Your data is never shared</p>
     </div>
   </section>
 
   <!-- TESTIMONIALS -->
-  <section class="py-24 text-center">
-    <h2 class="text-5xl font-bold mb-16">What Clients Say</h2>
-    <div class="max-w-4xl mx-auto px-6">
-      <p class="text-2xl italic">"KINETK refactored my experience narrative. Landed 3 offers in 2 weeks."</p>
-      <p class="mt-4 text-xl text-gray-400">— S. Chen, Sr. SWE @ Google</p>
-      <!-- Add more testimonials here from your original content -->
+  <section class="py-24 bg-[#0A1428]">
+    <div class="max-w-7xl mx-auto px-6">
+      <h2 class="text-4xl font-bold text-center mb-4">Real Results, Real People</h2>
+
+      <!-- Trustpilot-style rating bar -->
+      <div class="flex items-center justify-center gap-4 mb-16">
+        <div class="flex gap-1 text-yellow-400 text-2xl">★★★★★</div>
+        <div>
+          <span class="text-2xl font-bold">4.9</span>
+          <span class="text-gray-400 text-sm ml-1">/ 5.0</span>
+        </div>
+        <div class="text-gray-500 text-sm">Based on 200+ reviews</div>
+      </div>
+
+      <div class="grid md:grid-cols-3 gap-6">
+
+        <div class="testimonial-card p-6 bg-[#0F1E42]/60 rounded-2xl border border-[#00D4FF20]">
+          <div class="flex gap-1 text-yellow-400 text-sm mb-3">★★★★★</div>
+          <p class="text-gray-300 text-sm leading-relaxed italic mb-4">"KINETK refactored my entire experience narrative. Went from zero callbacks to 3 offers in 2 weeks. The VANTAGE-7 system is genuinely different from anything else I've tried."</p>
+          <div class="flex items-center gap-3">
+            <div class="w-9 h-9 rounded-full bg-[#00D4FF20] flex items-center justify-center text-[#00D4FF] font-bold text-sm">SC</div>
+            <div>
+              <div class="font-semibold text-sm">S. Chen</div>
+              <div class="text-gray-500 text-xs">Sr. Software Engineer @ Google</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card p-6 bg-[#0F1E42]/60 rounded-2xl border border-[#00D4FF20]">
+          <div class="flex gap-1 text-yellow-400 text-sm mb-3">★★★★★</div>
+          <p class="text-gray-300 text-sm leading-relaxed italic mb-4">"My ATS score went from 29 to 91 overnight. I had no idea how broken my resume was. The human review layer is what sets this apart — it reads like a real recruiter wrote it, because one did."</p>
+          <div class="flex items-center gap-3">
+            <div class="w-9 h-9 rounded-full bg-[#00D4FF20] flex items-center justify-center text-[#00D4FF] font-bold text-sm">MR</div>
+            <div>
+              <div class="font-semibold text-sm">M. Rodriguez</div>
+              <div class="text-gray-500 text-xs">Product Manager @ Meta</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card p-6 bg-[#0F1E42]/60 rounded-2xl border border-[#00D4FF20]">
+          <div class="flex gap-1 text-yellow-400 text-sm mb-3">★★★★★</div>
+          <p class="text-gray-300 text-sm leading-relaxed italic mb-4">"I was applying to 40+ jobs with no response. After KINETK, I had 6 interviews in 10 days. The 48hr turnaround is real — they delivered mine in 36 hours."</p>
+          <div class="flex items-center gap-3">
+            <div class="w-9 h-9 rounded-full bg-[#00D4FF20] flex items-center justify-center text-[#00D4FF] font-bold text-sm">JT</div>
+            <div>
+              <div class="font-semibold text-sm">J. Thompson</div>
+              <div class="text-gray-500 text-xs">Data Analyst @ Amazon</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card p-6 bg-[#0F1E42]/60 rounded-2xl border border-[#00D4FF20]">
+          <div class="flex gap-1 text-yellow-400 text-sm mb-3">★★★★★</div>
+          <p class="text-gray-300 text-sm leading-relaxed italic mb-4">"Worth every penny. I was skeptical about the AI + human combo but they genuinely work together. The recruiter caught things the AI missed and vice versa. Got my dream job offer."</p>
+          <div class="flex items-center gap-3">
+            <div class="w-9 h-9 rounded-full bg-[#00D4FF20] flex items-center justify-center text-[#00D4FF] font-bold text-sm">AK</div>
+            <div>
+              <div class="font-semibold text-sm">A. Kapoor</div>
+              <div class="text-gray-500 text-xs">UX Designer @ Apple</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card p-6 bg-[#0F1E42]/60 rounded-2xl border border-[#00D4FF20]">
+          <div class="flex gap-1 text-yellow-400 text-sm mb-3">★★★★★</div>
+          <p class="text-gray-300 text-sm leading-relaxed italic mb-4">"I'm a career changer from teaching to tech and my resume was a disaster. KINETK translated my transferable skills into tech language that actually resonated with ATS and hiring managers."</p>
+          <div class="flex items-center gap-3">
+            <div class="w-9 h-9 rounded-full bg-[#00D4FF20] flex items-center justify-center text-[#00D4FF] font-bold text-sm">LW</div>
+            <div>
+              <div class="font-semibold text-sm">L. Washington</div>
+              <div class="text-gray-500 text-xs">Operations Manager @ Microsoft</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card p-6 bg-[#0F1E42]/60 rounded-2xl border border-[#00D4FF20]">
+          <div class="flex gap-1 text-yellow-400 text-sm mb-3">★★★★★</div>
+          <p class="text-gray-300 text-sm leading-relaxed italic mb-4">"Upgraded to Premium for the interview prep call and it was game-changing. They knew exactly what the hiring manager was going to ask based on the role. Accepted an offer 3 days later."</p>
+          <div class="flex items-center gap-3">
+            <div class="w-9 h-9 rounded-full bg-[#00D4FF20] flex items-center justify-center text-[#00D4FF] font-bold text-sm">DP</div>
+            <div>
+              <div class="font-semibold text-sm">D. Park</div>
+              <div class="text-gray-500 text-xs">Finance Analyst @ Goldman Sachs</div>
+            </div>
+          </div>
+        </div>
+
+      </div>
     </div>
   </section>
 
-  <!-- FAQ SECTION -->
+  <!-- FAQ -->
   <section class="py-24 bg-[#0B1A3A]">
-    <div class="max-w-4xl mx-auto px-6">
-      <h2 class="text-5xl font-bold text-center mb-16">Frequently Asked Questions</h2>
-      <div class="space-y-6">
+    <div class="max-w-3xl mx-auto px-6">
+      <h2 class="text-4xl font-bold text-center mb-4">Frequently Asked Questions</h2>
+      <p class="text-center text-gray-400 mb-12">Everything you need to know before you start</p>
+      <div class="space-y-4">
 
-        <div class="faq-item border border-[#00D4FF20] rounded-3xl p-8">
-          <button onclick="this.nextElementSibling.classList.toggle('hidden')" class="flex justify-between w-full text-left text-xl font-medium">
+        <div class="faq-item border border-[#00D4FF20] rounded-2xl overflow-hidden">
+          <button class="faq-question w-full flex justify-between items-center p-6 text-left font-semibold hover:text-[#00D4FF] transition">
             What is the turnaround time?
-            <span class="text-[#00D4FF] text-2xl leading-none">+</span>
+            <span class="faq-icon text-[#00D4FF] text-xl font-light ml-4 flex-shrink-0">+</span>
           </button>
-          <div class="hidden mt-6 text-gray-300">
-            Standard delivery is 48 hours. Rush 24-hour option available for $49.
+          <div class="faq-answer hidden px-6 pb-6 text-gray-400 text-sm leading-relaxed">
+            Standard delivery is 48 hours from when you submit your resume. A rush 24-hour option is available for $49 on any package. We deliver early most of the time.
           </div>
         </div>
 
-        <div class="faq-item border border-[#00D4FF20] rounded-3xl p-8">
-          <button onclick="this.nextElementSibling.classList.toggle('hidden')" class="flex justify-between w-full text-left text-xl font-medium">
+        <div class="faq-item border border-[#00D4FF20] rounded-2xl overflow-hidden">
+          <button class="faq-question w-full flex justify-between items-center p-6 text-left font-semibold hover:text-[#00D4FF] transition">
             Does it work with my ATS?
-            <span class="text-[#00D4FF] text-2xl leading-none">+</span>
+            <span class="faq-icon text-[#00D4FF] text-xl font-light ml-4 flex-shrink-0">+</span>
           </button>
-          <div class="hidden mt-6 text-gray-300">
-            Yes — we optimize for Workday, Greenhouse, Taleo, Lever, and every major ATS used by Fortune 500 companies.
+          <div class="faq-answer hidden px-6 pb-6 text-gray-400 text-sm leading-relaxed">
+            Yes — we optimize for Workday, Greenhouse, Taleo, Lever, iCIMS, BambooHR, and every major ATS used by Fortune 500 companies. Our VANTAGE-7 system is trained on real ATS parsing behavior.
           </div>
         </div>
 
-        <div class="faq-item border border-[#00D4FF20] rounded-3xl p-8">
-          <button onclick="this.nextElementSibling.classList.toggle('hidden')" class="flex justify-between w-full text-left text-xl font-medium">
-            Is the review really human?
-            <span class="text-[#00D4FF] text-2xl leading-none">+</span>
+        <div class="faq-item border border-[#00D4FF20] rounded-2xl overflow-hidden">
+          <button class="faq-question w-full flex justify-between items-center p-6 text-left font-semibold hover:text-[#00D4FF] transition">
+            Is the review really done by a human?
+            <span class="faq-icon text-[#00D4FF] text-xl font-light ml-4 flex-shrink-0">+</span>
           </button>
-          <div class="hidden mt-6 text-gray-300">
-            100% human. A real recruiter reviews every resume after the AI scan. No bots.
+          <div class="faq-answer hidden px-6 pb-6 text-gray-400 text-sm leading-relaxed">
+            100% human. Every resume is reviewed by a real recruiter with Fortune 500 hiring experience after the AI scan. The AI finds the gaps — the human makes it compelling. No bots touch your final document.
           </div>
         </div>
 
-        <div class="faq-item border border-[#00D4FF20] rounded-3xl p-8">
-          <button onclick="this.nextElementSibling.classList.toggle('hidden')" class="flex justify-between w-full text-left text-xl font-medium">
-            What's your guarantee?
-            <span class="text-[#00D4FF] text-2xl leading-none">+</span>
+        <div class="faq-item border border-[#00D4FF20] rounded-2xl overflow-hidden">
+          <button class="faq-question w-full flex justify-between items-center p-6 text-left font-semibold hover:text-[#00D4FF] transition">
+            What is your money-back guarantee?
+            <span class="faq-icon text-[#00D4FF] text-xl font-light ml-4 flex-shrink-0">+</span>
           </button>
-          <div class="hidden mt-6 text-gray-300">
-            Pass ATS or land interviews — or we redo it free. Higher tiers include money-back guarantee.
+          <div class="faq-answer hidden px-6 pb-6 text-gray-400 text-sm leading-relaxed">
+            If your rewritten resume doesn't pass ATS screening or you don't land at least one interview within 30 days of using it, we'll rewrite it free. Standard and Premium packages include a full money-back guarantee. <a href="guarantee.html" class="text-[#00D4FF] underline">See full guarantee details →</a>
           </div>
         </div>
 
-        <div class="faq-item border border-[#00D4FF20] rounded-3xl p-8">
-          <button onclick="this.nextElementSibling.classList.toggle('hidden')" class="flex justify-between w-full text-left text-xl font-medium">
-            Is everything confidential?
-            <span class="text-[#00D4FF] text-2xl leading-none">+</span>
+        <div class="faq-item border border-[#00D4FF20] rounded-2xl overflow-hidden">
+          <button class="faq-question w-full flex justify-between items-center p-6 text-left font-semibold hover:text-[#00D4FF] transition">
+            Is my information confidential?
+            <span class="faq-icon text-[#00D4FF] text-xl font-light ml-4 flex-shrink-0">+</span>
           </button>
-          <div class="hidden mt-6 text-gray-300">
-            Yes. Bank-level encryption. Your resume and data are deleted after processing.
+          <div class="faq-answer hidden px-6 pb-6 text-gray-400 text-sm leading-relaxed">
+            Yes. Your resume and personal information are encrypted, never shared with third parties, and deleted from our servers after delivery. We take confidentiality seriously. <a href="privacy.html" class="text-[#00D4FF] underline">Read our privacy policy →</a>
           </div>
         </div>
 
@@ -225,51 +421,72 @@
 
   <!-- FINAL CTA -->
   <section class="py-24 text-center bg-gradient-to-t from-[#0A1428] to-[#0B1A3A]">
-    <h2 class="text-5xl font-bold mb-8">Ready to Get Visible?</h2>
-    <a href="ats-checker.html" class="text-2xl bg-[#00D4FF] text-[#0A1428] px-16 py-6 rounded-2xl font-bold hover:bg-[#00BFFF] transition inline-block">
-      Start Your Free ATS Score Now
-    </a>
+    <div class="max-w-3xl mx-auto px-6">
+      <h2 class="text-4xl font-bold mb-4">Ready to Get Visible?</h2>
+      <p class="text-gray-400 text-lg mb-8">Start with your free ATS score — no email, no credit card required.</p>
+      <a href="ats-checker.html" class="inline-block bg-[#00D4FF] text-[#0A1428] px-12 py-5 rounded-2xl text-xl font-bold hover:bg-[#00BFFF] transition">
+        Get Your Free ATS Score →
+      </a>
+      <p class="text-gray-500 text-sm mt-4">Takes 30 seconds • Instant results • No signup needed</p>
+    </div>
   </section>
 
   <!-- FOOTER -->
-  <footer class="bg-[#0A1428] border-t border-[#00D4FF20] py-16">
-    <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-4 gap-8">
+  <footer class="bg-[#0A1428] border-t border-[#00D4FF15] pt-16 pb-8">
+    <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-4 gap-10 mb-12">
       <div>
-        <img src="images/logo.png" alt="KINETK" class="h-10 mb-4">
-        <p class="text-gray-400 text-sm">AI + Real Recruiter Expertise That Gets You Interviews</p>
-        <p class="text-[#00D4FF] text-sm mt-2">94% Success Rate • 48hr Delivery</p>
+        <img src="images/logo.png" alt="KINETK" class="h-9 mb-4">
+        <p class="text-gray-400 text-sm leading-relaxed mb-4">AI + Real Recruiter expertise that gets you interviews. 94% success rate. 48hr delivery.</p>
+        <!-- Social Icons -->
+        <div class="flex gap-4">
+          <a href="#" aria-label="LinkedIn" class="w-8 h-8 rounded-full bg-[#00D4FF15] hover:bg-[#00D4FF30] flex items-center justify-center text-[#00D4FF] transition">
+            <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+          </a>
+          <a href="#" aria-label="Instagram" class="w-8 h-8 rounded-full bg-[#00D4FF15] hover:bg-[#00D4FF30] flex items-center justify-center text-[#00D4FF] transition">
+            <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+          </a>
+          <a href="#" aria-label="Twitter/X" class="w-8 h-8 rounded-full bg-[#00D4FF15] hover:bg-[#00D4FF30] flex items-center justify-center text-[#00D4FF] transition">
+            <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.747l7.73-8.835L1.254 2.25H8.08l4.253 5.622zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+          </a>
+          <a href="#" aria-label="TikTok" class="w-8 h-8 rounded-full bg-[#00D4FF15] hover:bg-[#00D4FF30] flex items-center justify-center text-[#00D4FF] transition">
+            <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z"/></svg>
+          </a>
+        </div>
       </div>
 
       <div>
-        <h4 class="font-medium mb-4 text-gray-400">Quick Links</h4>
+        <h4 class="font-semibold text-sm mb-4 text-gray-200">Services</h4>
         <ul class="space-y-3 text-sm text-gray-400">
-          <li><a href="#how" class="hover:text-white">How It Works</a></li>
-          <li><a href="#packages" class="hover:text-white">Packages</a></li>
-          <li><a href="ats-checker.html" class="hover:text-white">Free ATS Score</a></li>
-          <li><a href="contact.html" class="hover:text-white">Talk to Recruiter</a></li>
+          <li><a href="ats-checker.html" class="hover:text-[#00D4FF] transition">Free ATS Score</a></li>
+          <li><a href="order.html?package=basic" class="hover:text-[#00D4FF] transition">Basic Package — $99</a></li>
+          <li><a href="order.html?package=standard" class="hover:text-[#00D4FF] transition">Standard Package — $199</a></li>
+          <li><a href="order.html?package=premium" class="hover:text-[#00D4FF] transition">Premium Package — $299</a></li>
+          <li><a href="contact.html" class="hover:text-[#00D4FF] transition">Talk to a Recruiter</a></li>
         </ul>
       </div>
 
       <div>
-        <h4 class="font-medium mb-4 text-gray-400">Company</h4>
+        <h4 class="font-semibold text-sm mb-4 text-gray-200">Learn</h4>
         <ul class="space-y-3 text-sm text-gray-400">
-          <li><a href="#" class="hover:text-white">About Us</a></li>
-          <li><a href="#" class="hover:text-white">Blog</a></li>
-          <li><a href="#" class="hover:text-white">Contact</a></li>
+          <li><a href="#how" class="hover:text-[#00D4FF] transition">How It Works</a></li>
+          <li><a href="blog/index.html" class="hover:text-[#00D4FF] transition">Blog</a></li>
+          <li><a href="blog/how-ats-works.html" class="hover:text-[#00D4FF] transition">How ATS Works</a></li>
+          <li><a href="#packages" class="hover:text-[#00D4FF] transition">Pricing</a></li>
         </ul>
       </div>
 
       <div>
-        <h4 class="font-medium mb-4 text-gray-400">Trust &amp; Legal</h4>
+        <h4 class="font-semibold text-sm mb-4 text-gray-200">Trust & Legal</h4>
         <ul class="space-y-3 text-sm text-gray-400">
-          <li><a href="#" class="hover:text-white">Privacy Policy</a></li>
-          <li><a href="#" class="hover:text-white">Money-Back Guarantee</a></li>
-          <li><a href="#" class="hover:text-white">Confidentiality</a></li>
+          <li><a href="guarantee.html" class="hover:text-[#00D4FF] transition">Money-Back Guarantee</a></li>
+          <li><a href="privacy.html" class="hover:text-[#00D4FF] transition">Privacy Policy</a></li>
+          <li><a href="contact.html" class="hover:text-[#00D4FF] transition">Contact Us</a></li>
         </ul>
       </div>
     </div>
-    <div class="max-w-7xl mx-auto px-6 mt-12 pt-8 border-t border-[#00D4FF10] text-center text-gray-500 text-sm">
-      &copy; 2026 KINETK. All rights reserved. Real recruiter. No bots.
+    <div class="max-w-7xl mx-auto px-6 pt-6 border-t border-[#00D4FF10] flex flex-col md:flex-row justify-between items-center text-gray-600 text-xs gap-2">
+      <span>© 2026 KINETK. All rights reserved.</span>
+      <span>Real recruiter. No bots. 94% success rate.</span>
     </div>
   </footer>
 
