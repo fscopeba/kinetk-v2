@@ -157,8 +157,4 @@ nav a img {
   object-fit: contain;
 }
 
-/* Scroll reveal base (invisible before JS runs) */
-.reveal {
-  opacity: 0;
-  transform: translateY(24px);
-}
+/* Scroll reveal: GSAP handles all animation states via fromTo — no CSS opacity:0 needed */
