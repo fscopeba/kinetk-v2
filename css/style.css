@@ -1,4 +1,8 @@
 /* Reset & Base */
+html {
+  overflow-y: scroll; /* always show scrollbar — prevents layout shift between long and short pages */
+}
+
 * {
   margin: 0;
   padding: 0;
